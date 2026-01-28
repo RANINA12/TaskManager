@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="main-container">
+        <h1 class="app-title">Task Manager</h1>
+
+        <div class="glass-card form-section">
+            <h2>Add New Task</h2>
+            <div class="input-group">
+                <input id="title" placeholder="Task title" autocomplete="off">
+                <input id="desc" placeholder="Description" autocomplete="off">
+            </div>
+            <button onclick="addTask()" class="btn-primary">Add Task</button>
+        </div>
+
+        <div class="task-section">
+            <h2>All Tasks</h2>
+            <div id="tasks" class="task-grid">
+            </div>
+        </div>
+
+        <div class="glass-card delete-section">
+            <h2>Delete Task</h2>
+            <div class="input-row">
+                <input id="deleteId" placeholder="Enter Task ID">
+                <button onclick="deleteById()" class="btn-danger">Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
